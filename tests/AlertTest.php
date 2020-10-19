@@ -74,7 +74,7 @@ class AlertTest extends TestCase
 
     public function testLocalizedMessage()
     {
-        Lang::shouldReceive('getFromJson')
+        Lang::shouldReceive('get')
             ->once()
             ->with('test-key', [], null)
             ->andReturn('test-translation');
